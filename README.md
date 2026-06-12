@@ -25,30 +25,30 @@ Password: VRV12345
 
 ### Role Management
 
--   **User Role**: Can log in and access only user-specific pages. Restricted from accessing admin or moderator pages.
--   **Moderator Role**: Can access both user and moderator pages but restricted from admin-specific pages.
--   **Administrator Role**: Full access to all pages and functionalities.
+- **User Role**: Can log in and access only user-specific pages. Restricted from accessing admin or moderator pages.
+- **Moderator Role**: Can access both user and moderator pages but restricted from admin-specific pages.
+- **Administrator Role**: Full access to all pages and functionalities.
 
 ### Views
 
--   **Normal View**: Displays user-related information in a standard format like a list.
--   **Chart View**: Visualizes data in chart formats.
--   **Settings View**: A comprehensive dashboard for managing users according to role, permission, and active status.
+- **Normal View**: Displays user-related information in a standard format like a list.
+- **Chart View**: Visualizes data in chart formats.
+- **Settings View**: A comprehensive dashboard for managing users according to role, permission, and active status.
 
 ### User Management
 
--   **Search, Filter, and Pagination**: Easily find and manage users with advanced filtering and pagination.
--   **Multiple Actions (Admin and Moderator)**:
-    -   Assign roles and permissions.
-    -   Ban or delete users.
-    -   Edit user details such as name.
-    -   Toggle active status.
+- **Search, Filter, and Pagination**: Easily find and manage users with advanced filtering and pagination.
+- **Multiple Actions (Admin and Moderator)**:
+    - Assign roles and permissions.
+    - Ban or delete users.
+    - Edit user details such as name.
+    - Toggle active status.
 
 ### Profile Page
 
--   Two Views:
-    -   **Normal View**: Displays user information in a formatted manner.
-    -   **JSON View**: Displays raw user data in JSON format for debugging or advanced use cases.
+- Two Views:
+    - **Normal View**: Displays user information in a formatted manner.
+    - **JSON View**: Displays raw user data in JSON format for debugging or advanced use cases.
 
 ### Routes
 
@@ -57,8 +57,8 @@ Password: VRV12345
 
 ### Contexts
 
--   **Sidebar Context**: Manages the sidebar's state for better UI interaction.
--   **User Data Context**: Fetches user data on initialization and sets it in context for global availability.
+- **Sidebar Context**: Manages the sidebar's state for better UI interaction.
+- **User Data Context**: Fetches user data on initialization and sets it in context for global availability.
 
 ## Live Preview
 
@@ -90,7 +90,7 @@ Password: VRV12345
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/alok/rbac_vrv.git
+    git clone https://github.com/03aey/rbac_vrv.git
     cd rbac_vrv
     ```
 
@@ -126,28 +126,28 @@ For a detailed understanding of the implementation, refer to the `STEPS.md` file
 
 ### Contexts
 
--   **SidebarContext**:
-    -   Manages sidebar state (open/close).
-    -   Accessible across the application to ensure consistent behavior.
--   **UserContext**:
-    -   Fetches user data on application load.
-    -   Stores user information like role, permissions, and active status for role-based rendering and routing.
+- **SidebarContext**:
+    - Manages sidebar state (open/close).
+    - Accessible across the application to ensure consistent behavior.
+- **UserContext**:
+    - Fetches user data on application load.
+    - Stores user information like role, permissions, and active status for role-based rendering and routing.
 
 ### Routes
 
--   **Protected Routes**:
-    -   Ensure users are redirected appropriately based on authentication and permissions.
--   **Examples**:
-    -   Redirect logged-in users from the register page to their profile page.
-    -   Restrict access to the admin dashboard for unauthorized users.
+- **Protected Routes**:
+    - Ensure users are redirected appropriately based on authentication and permissions.
+- **Examples**:
+    - Redirect logged-in users from the register page to their profile page.
+    - Restrict access to the admin dashboard for unauthorized users.
 
 ---
 
 ## Future Enhancements
 
--   Add real-time notifications for role changes and user actions.
--   Implement audit logging for user management actions.
--   Expand chart view for better data visualization.
+- Add real-time notifications for role changes and user actions.
+- Implement audit logging for user management actions.
+- Expand chart view for better data visualization.
 
 ---
 
@@ -168,8 +168,9 @@ For a detailed understanding of the implementation, refer to the `STEPS.md` file
     ```
 5. Open a pull request.
 
-## Contact
+---
 
-For any inquiries or issues, please contact:
-**Alok Yadav**  
-[GitHub](https://github.com/alok_x0s1) | [Email](mailto:yalok6321@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-03aey-181717?logo=github&logoColor=white)](https://github.com/03aey)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-in%2F03aey-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/03aey)
+[![Portfolio](https://img.shields.io/badge/Portfolio-03aey.vercel.app-000000?logo=vercel&logoColor=white)](https://03aey.vercel.app)
+[![Linktree](https://img.shields.io/badge/Linktree-03aey-43E55E?logo=linktree&logoColor=white)](https://linktr.ee/03aey)

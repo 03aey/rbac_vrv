@@ -12,41 +12,35 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
     npm init -y
     ```
 
--   Install necessary dependencies:
+- Install necessary dependencies:
     ```bash
     npm install express mongoose bcrypt jsonwebtoken cors dotenv
     npm install --save-dev nodemon
     ```
 
 2. **Set Up MongoDB**
-
     - Configure a MongoDB database locally or using a cloud service like MongoDB Atlas.
     - Create a `.env` file to store sensitive information (e.g., `DATABASE_URL`, `JWT_SECRET`).
 
 3. **Create Models**
-
     - Define models for `User`, `Role`, and `Permissions` using Mongoose.
 
 4. **Implement Authentication**
-
     - Use `bcrypt` for password hashing.
     - Implement login and register APIs.
     - Use `jsonwebtoken` (JWT) for authentication.
 
 5. **Role and Permission Logic**
-
     - Define roles (`user`, `moderator`, `admin`) and associated permissions.
     - Implement middleware to check permissions for protected routes.
 
 6. **Set Up Routes**
-
     - Create routes for:
         - Registering new users.
         - Logging in and returning a JWT token.
         - Managing users (CRUD operations) based on roles and permissions.
 
 7. **Handle CORS**
-
     - Use the `cors` middleware to handle cross-origin requests.
 
     ```javascript
@@ -55,7 +49,6 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
     ```
 
 8. **Test APIs**
-
     - Use Postman or a similar tool to test the backend endpoints.
 
 9. **Deploy Backend**
@@ -66,13 +59,12 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Step 2: Build the Frontend Application
 
 1. **Initialize the React Project**
-
     - Use Create React App or Vite to scaffold the project.
 
-    ```bash
-    npm create vite@latest rbac
-    cd rbac
-    ```
+        ```bash
+        npm create vite@latest rbac
+        cd rbac
+        ```
 
     - Install necessary dependencies:
         ```bash
@@ -80,11 +72,9 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
         ```
 
 2. **Build the Home Page**
-
     - Create a simple home page with navigation to login and register pages.
 
 3. **Create the Register Page**
-
     - Build a registration form with fields for username, email, password, etc.
     - Connect the form to the backend API for user registration using `axios`.
     - Handle form validation and error messages.
@@ -97,7 +87,6 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Step 3: Implement Context for User Data
 
 1. **Create User Context**
-
     - Use the React Context API to store and manage user information globally.
     - Fetch user details from the backend upon login and store them in context.
 
@@ -107,7 +96,6 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Step 4: Build the Dashboard
 
 1. **Create the Dashboard**
-
     - Design the dashboard layout with a sidebar and main content area.
     - Implement protected routes to restrict access based on roles:
         - Users can see user-specific pages.
@@ -115,13 +103,11 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
         - Admins can see all pages.
 
 2. **Implement Different Views**
-
     - **Normal View**: Standard user data display.
     - **Chart View**: Integrate a chart library (e.g. Recharts) to display data visually.
     - **Settings View**: Display a table of all users with options for search, filter, and pagination.
 
 3. **Add User Management Features**
-
     - Allow moderators and administrators to:
         - Assign roles and permissions.
         - Edit user details (e.g., name).
@@ -135,7 +121,6 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Step 5: Make the Application Responsive
 
 1. **Use Tailwind CSS**
-
     - Ensure the application is responsive for various screen sizes.
     - Test the layout and functionality on mobile, tablet, and desktop devices.
 
@@ -145,7 +130,6 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Step 6: Deploy the Frontend
 
 1. **Deploy to a Hosting Service**
-
     - Deploy the React application to a hosting service.
     - Configure environment variables to point to the deployed backend.
 
@@ -156,7 +140,6 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Step 7: Testing and Debugging
 
 1. **Test User Flows**
-
     - Test login, registration, and dashboard access for all roles.
     - Verify role-based permissions and protected routes.
 
@@ -166,5 +149,3 @@ This document outlines the step-by-step process taken to build the Role-Based Ac
 ## Conclusion
 
 By following these steps, you have successfully built a fully functional Role-Based Access Control (RBAC) system with features like user authentication, role-based routing, protected views, and a responsive design. Both the backend and frontend are deployed and integrated seamlessly.
-
-**Alok Yadav**

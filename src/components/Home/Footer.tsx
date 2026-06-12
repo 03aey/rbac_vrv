@@ -10,7 +10,8 @@ export default function Footer() {
 						<span className="ml-2 text-gray-900">AccessGuard</span>
 					</div>
 					<div className="text-gray-600 text-center sm:text-right">
-						© 2024 AccessGuard. All rights reserved.
+						© {new Date().getFullYear()} AccessGuard. All rights
+						reserved.
 					</div>
 				</div>
 			</div>
